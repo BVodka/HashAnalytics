@@ -1,0 +1,27 @@
+import pandas as pd
+import numpy as np
+xls = pd.ExcelFile('C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/advertising.xlsx')
+df1 = pd.read_excel(xls, 'Sheet1')
+df2 = pd.read_excel(xls, 'Sheet2')
+df3 = pd.read_excel(xls, 'Sheet3')
+df4 = pd.read_excel(xls, 'Sheet4')
+df5 = pd.read_excel(xls, 'Sheet5')
+df6 = pd.read_excel(xls, 'Sheet6')
+df7 = pd.read_excel(xls, 'Sheet7')
+df8 = pd.read_excel(xls, 'Sheet8')
+df9 = pd.read_excel(xls, 'Sheet9')
+df10 = pd.read_excel(xls, 'Sheet10')
+
+#print(df1.head())
+#Don't forget to add '.csv' at the end of the path
+export_csv = df1.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe1.csv', index = None, header=True) 
+export_csv1 = df2.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe2.csv', index = None, header=True)
+export_csv2 = df3.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe3.csv', index = None, header=True) 
+export_csv3 = df4.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe4.csv', index = None, header=True) 
+export_csv4 = df5.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe5.csv', index = None, header=True) 
+export_csv5 = df6.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe6.csv', index = None, header=True) 
+export_csv6 = df7.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe7.csv', index = None, header=True) 
+export_csv7 = df8.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe8.csv', index = None, header=True) 
+export_csv8 = df9.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe9.csv', index = None, header=True) 
+export_csv9 = df10.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe10.csv', index = None, header=True) 
+#export_csv1 = df.to_csv (r'C:/Users/HP/Desktop/Udacity Assignment/HashAnalytics/Assignment II/export_dataframe.csv', index = None, header=True)  
